@@ -4,15 +4,9 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-    <title>JavaSpringWebApp</title>
+    <title>WebCamadas-2019</title>
     <meta name="description" content="" />
 
-    <ui:define name="cabecalho">
-      <ui:include src="/template/cabecalho.xhtml" />
-    </ui:define>
-
-
-    
     <spring:url value="/resources/gradients.css" var="gradientsCss" />
     <spring:url value="/resources/styles.css" var="stylesCss" />
     <spring:url value="/resources/set-background.js" var="setBackgroundJs" />
@@ -21,6 +15,8 @@
     <link href="${stylesCss}" rel="stylesheet">
     <link href="${gradientsCss}" rel="stylesheet">
   </head>
+  
+  <!--    
   <body class="">
     <div class="wrapper">
       <div class="graphics">
@@ -62,5 +58,34 @@
     </footer>
 
     <script src={$setBackgroundJs}"></script>
-  </body>
+  </body> -->
+
+  <h1> hello test </h1>
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+xmlns:h="http://xmlns.jcp.org/jsf/html"
+xmlns:f="http://xmlns.jcp.org/jsf/core"
+xmlns:p="http://primefaces.org/ui"
+template="/template/template.xhtml"
+xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+
+<ui:define name="cabecalho">
+  <ui:include src="/template/cabecalho.xhtml" />
+</ui:define>
+
+<ui:define name="menu">
+    <ui:include src="/template/menu.xhtml" />
+</ui:define>
+
+<ui:define name="conteudo">
+  <h1 id="tituloPrincipal">Página Principal do Sistema WEB</h1>
+</ui:define>
+
+<ui:define name="rodape">
+   <ui:include src="/template/rodape.xhtml" />
+</ui:define>
+
+</ui:composition>
+
+
 </html>
