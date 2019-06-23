@@ -7,6 +7,12 @@
     <title>JavaSpringWebApp</title>
     <meta name="description" content="" />
 
+    <ui:define name="cabecalho">
+      <ui:include src="/template/cabecalho.xhtml" />
+    </ui:define>
+
+
+    
     <spring:url value="/resources/gradients.css" var="gradientsCss" />
     <spring:url value="/resources/styles.css" var="stylesCss" />
     <spring:url value="/resources/set-background.js" var="setBackgroundJs" />
