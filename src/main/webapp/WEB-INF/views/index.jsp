@@ -16,7 +16,7 @@
     <link href="${gradientsCss}" rel="stylesheet">
   </head>
   
-  <!--    
+    
   <body class="">
     <div class="wrapper">
       <div class="graphics">
@@ -58,8 +58,8 @@
     </footer>
 
     <script src={$setBackgroundJs}"></script>
-  </body> -->
-
+  </body>
+<!--
   <h1> hello test </h1>
 <ui:composition xmlns="http://www.w3.org/1999/xhtml"
 xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
@@ -87,5 +87,5 @@ xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 
 </ui:composition>
 
-
+-->
 </html>
