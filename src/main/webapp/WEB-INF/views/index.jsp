@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
@@ -6,15 +8,15 @@
 	xmlns:h="http://xmlns.jcp.org/jsf/html"
 	xmlns:f="http://xmlns.jcp.org/jsf/core"
 	xmlns:p="http://primefaces.org/ui"
-	template="/template/template.xhtml"
+	template="/template/template.jsp"
 	xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
 
 	<ui:define name="cabecalho">
-		<ui:include src="/template/cabecalho.xhtml" />
+		<ui:include src="/template/cabecalho.jsp" />
 	</ui:define>
 	
 	<ui:define name="menu">
-	    <ui:include src="/template/menu.xhtml" />
+	    <ui:include src="/template/menu.jsp" />
 	</ui:define>
 	
 	<ui:define name="conteudo">
@@ -22,7 +24,7 @@
 	</ui:define>
 	
 	<ui:define name="rodape">
-	   <ui:include src="/template/rodape.xhtml" />
+	   <ui:include src="/template/rodape.jsp" />
 	</ui:define>
 
 </ui:composition>
